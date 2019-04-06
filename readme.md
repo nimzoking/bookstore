@@ -1,6 +1,7 @@
 # Bookstore Project
 
 Following the Bookstore Project in Django for Professionals
+Completed up to Chapter 7 - waiting for rest of chapters to be published!
 
 # Docker for Windows Issues
 
