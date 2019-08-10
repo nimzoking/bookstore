@@ -21,4 +21,6 @@ docker-compose exec web python manage.py createsuperuser
 Need to look at updating Django to 2.2.4 due to vulnerabilities
 Note - issue with Secret Key if is contains "$"
 
+Chapter 8 - complete
+Chapter 9 - complete - need to sign up for e-mail, and configure to use e-mail back end.
 
