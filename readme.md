@@ -16,4 +16,9 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 ```
 
+# Commencing again from Chapter 8
+
+Need to look at updating Django to 2.2.4 due to vulnerabilities
+Note - issue with Secret Key if is contains "$"
+
 
