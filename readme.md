@@ -23,4 +23,6 @@ Note - issue with Secret Key if is contains "$"
 
 Chapter 8 - complete
 Chapter 9 - complete - need to sign up for e-mail, and configure to use e-mail back end.
+Chapter 10 - complete - uuid option is useful to know
+Chapter 11 - complete - need to explore more use of Bootstrap content to jazz up the look & feel 
 
