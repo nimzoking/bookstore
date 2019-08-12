@@ -18,11 +18,13 @@ docker-compose exec web python manage.py createsuperuser
 
 # Commencing again from Chapter 8
 
-Need to look at updating Django to 2.2.4 due to vulnerabilities
+Need to look at updating Django to 2.2.4 due to vulnerabilities - need to update docker images
 Note - issue with Secret Key if is contains "$"
 
 Chapter 8 - complete
 Chapter 9 - complete - need to sign up for e-mail, and configure to use e-mail back end.
 Chapter 10 - complete - uuid option is useful to know
 Chapter 11 - complete - need to explore more use of Bootstrap content to jazz up the look & feel 
-
+Chapter 12 - pretty basic model for upload and storage of files
+Chapter 13 - simple example of using Django customer permissions
+Chapter 14 - adding Stripe - 
