@@ -1,0 +1,2 @@
+# Ignore Files containing API Keys
+docker-compose.yml
