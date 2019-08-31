@@ -3,16 +3,17 @@ version: '3.7'
 services:
   web:
     build: .
-    command: python /code/manage.py runserver 0.0.0.0:8000
+    command: python /code/manage.py runserver 0.0.0.0:9000
     environment:
       - SECRET_KEY=em1ozs_va&3-0(!9_c#2uq_7yy#%-uj2v4h%+(hn+^1zalbe!l
       - DEBUG=1
-      
+      - STRIPE_TEST_PUBLISHABLE_KEY=pk_test_93BJavrzFdezQY297F2mZZUv
+      - STRIPE_TEST_SECRET_KEY=sk_test_bOx0n3GE8I6R4MaDjnQXNLnM
 
     volumes:
       - .:/code
     ports:
-      - 8000:8000
+      - 9000:9000
     depends_on:
       - db
   db:

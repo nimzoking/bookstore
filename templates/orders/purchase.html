@@ -5,14 +5,44 @@
 {% block content %}
 <h1>Orders page</h1>
 <p>Buy for £39.00</p>
+
 <form action="{% url 'charge' %}" method="post">
   {% csrf_token %}
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-      data-key="{{ stripe_key }}"
-      data-description="All Books"
-      data-amount="3900"
-      data-currency="gbp"
-      data-locale="auto">
-  </script>
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="{{ stripe_key }}"
+        data-name="BearBags"
+        data-description="Stripe Checkout Page for Bearbags UK"
+        data-amount="3900"
+        data-currency="gbp"
+        data-billing-address="123 High Street,Toytown"
+        data-locale="auto">
+      </script>
 </form>
+
+<!-- Code for new version of Stripe needs more work doing -->
+
+<!-- <script src="https://js.stripe.com/v3"></script>
+<button id="checkout-button">Pay Now</button>
+
+<script>
+    console.log('JavaScript here!')
+    const stripe = Stripe('pk_test_93BJavrzFdezQY297F2mZZUv');
+    const checkoutButton = document.querySelector('#checkout-button');
+    
+    console.log(checkoutButton)
+    
+    checkoutButton.addEventListener('click', () => {
+      stripe.redirectToCheckout({
+        items: [{
+          // Define the product and SKU in the Dashboard first, and use the SKU
+          // ID in your client-side code.
+          sku: 'sku_123',
+          quantity: 1
+        }],
+        successUrl: 'https://www.example.com/success',
+        cancelUrl: 'https://www.example.com/cancel'
+      });
+    });
+</script> -->
+
 {% endblock content %}

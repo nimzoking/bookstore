@@ -27,4 +27,5 @@ Chapter 10 - complete - uuid option is useful to know
 Chapter 11 - complete - need to explore more use of Bootstrap content to jazz up the look & feel 
 Chapter 12 - pretty basic model for upload and storage of files
 Chapter 13 - simple example of using Django customer permissions
-Chapter 14 - adding Stripe - 
+Chapter 14 - adding Stripe - pretty basic introduction, quite a bit of functionality missing, think this is a cop-out from the Author TBH!
+

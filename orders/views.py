@@ -15,21 +15,28 @@ class OrdersPageView(TemplateView):
         return context
 
 def charge(request): 
-    # Get the permission
-    permission = Permission.objects.get(codename='special_status')
+    # --- Review this section, commented out for testing purposes ----
+    # --- Use this option to allow users to review orders ----
 
-    # Get user
-    u = request.user
+    # # Get the permission
+    # permission = Permission.objects.get(codename='special_status')
 
-    # Add to user's permission set
-    u.user_permissions.add(permission)
+    # # Get user
+    # u = request.user
+
+    # # Add to user's permission set
+    # u.user_permissions.add(permission)
 
     if request.method == 'POST':
+        
+        # Stripe Current Charge Method
+
         charge = stripe.Charge.create(
-            amount=3900,
+            amount=5900,
             currency='gbp',
-            description='Purchase all books',
+            description='Purchase Handbag',
             source=request.POST['stripeToken']
         )
+
         return render(request, 'orders/charge.html')
 
